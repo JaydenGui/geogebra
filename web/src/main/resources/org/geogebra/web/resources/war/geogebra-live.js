@@ -89,9 +89,9 @@
                         if (commandString) {
                             that.sendEvent("evalCommand", label + " = " + commandString, label);
                             var group = that.api.getObjectsOfItsGroup(label);
-                                if (group != null) {
-                                    that.sendEvent("addToGroup", label, group);
-                                }
+                            if (group != null) {
+                                that.sendEvent("addToGroup", label, group);
+                            }
                         } else {
                             let xml = that.api.getXML(label);
                             that.sendEvent("evalXML", xml, label);
