@@ -191,7 +191,7 @@ public class TransformableRectangle {
 				&& height < geo.getMinHeight() && width < geo.getWidth()) {
 			return;
 		}
-
+		Log.error(width+"x"+height);
 		if (height < geo.getMinHeight()) {
 			if (y != 0) {
 				y = geo.getHeight() - geo.getMinHeight();
